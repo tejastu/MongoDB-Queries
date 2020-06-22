@@ -34,10 +34,13 @@ async function fetchRecord(){
 async function sortbynameRecord(){
     let details = await technologies
     .find()
+    .and([{isPublished: true},{tags:{$in:["backend"]}}])
     .sort("name")
     .select("name author");
     console.log(details);
 }
-//sortbynameRecord();
+sortbynameRecord();
+
+
 
 
