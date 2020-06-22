@@ -1,0 +1,30 @@
+mongoimport --db mongo-exercises --collection courses --file exercise-data.json --jsonArray
+
+
+
+So here's your first exercise. 
+
+write a program and get all the published backend courses, in our database, 
+sort them by their name, and pick only their name and author properties.
+
+
+
+second exercie.
+
+ get all the published frontend and backend courses
+
+sort them by their price in a descending order, from most expensive
+
+to least expensive, pick only their name and author,
+
+and display them on the console.
+
+
+third exercise.
+
+get all the published courses that are 15 dollars or less
+
+or have the word 'by' in their title.
+
+
+
