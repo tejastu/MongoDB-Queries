@@ -27,7 +27,7 @@ let technologies = mongoose.model("courses", recordSchema);
 async function fetchRecord(){
     let details = await technologies
     .find()
-     .and([{price: { $lte: 15 }},{name:/by/}]);
+     .and([{isPublished: true},{price: { $lte: 15 }},{name:/by/}]);
      console.log(details);
   }
   fetchRecord();
